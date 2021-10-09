@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 *
 {
     margin: 0;
@@ -8,32 +9,28 @@
 }
 body
 {
-    overflow: hidden;
-    background:#000000;
+    /*overflow: hidden;*/
+    background: #000000;
     min-height: 100vh;
 
 }
-
 #header
 {
-
-
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 
 }
-
 #header .logo 
 {
-    color:#fff;
+    color: #fff;
     font-weight: 700;
-    font-size :2em;
+    font-size: 2em;
     text-decoration: none;
 
 }
@@ -53,15 +50,77 @@ body
 #header ul li a
 {
     text-decoration: none;
-    padding :6px 15px;
-    color:#fff;
+    padding: 6px 15px;
+    color: #fff;
     border-radius: 20px;
 
 }
 #header ul li a:hover,
 #header ul li a.active
 {
-    background-image: linear-gradient(to right, #f5ce62, #e43603, #e85a19);
+    background-image: linear-gradient(135deg, #f5ce62, #e43603, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section #text
+{
+    position: absolute;
+    color: #FFF;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+}
+section #text span 
+{
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #000000;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(150px);
+
+    background-image: linear-gradient(135deg, #f5ce62, #e43603, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 
-}   
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background:  linear-gradient(135deg, #f5ce62, #e43603, #e85a19);
+    border-radius: 40px;
+    color: #FFF;
+}
+.sec h2
+{
+    font-size: 4.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p
+{
+    font-size: 1.5px;
+    color: #fff;
+}
